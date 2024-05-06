@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #a4a4a4;
+    padding: 10px 50px;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0b539c;
+}
+
+.comm {
+    color: white;
+}
+
+.nav-links-container {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #0b539c;
+    border: solid 2px #0b539c;
+    padding: 10px 20px;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+.box-container {
+    position: relative;
+}
+
+.aero-back {
+    background-color: palevioletred;
+}
+
+.hoton-jirgi {
+    width: 1000px;
+}   
+
+.form-container {  
+    width: 25%;
+    padding: 40px;
+    position: absolute;
+    background-color: white;
+    top: 0;
+    right: 0;
+    margin: 80px 230px 0 0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+fieldset {
+    border: none;
+    border-bottom: solid 2px lightgrey;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 4px;
+}
+
+input {
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    background-color: inherit;
+    accent-color: inherit;
+    outline: none;
+}
+
+svg {
+    width: 24px;
+    height: 24px;
+}
+
+.forgot {
+    text-align: right;
+    font-size: 16px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap:80px;
+    align-items: center
+}
+
+button {
+    width: fit-content;
+    padding: 10px 70px; 
+    border-radius: 5px;
+}
+
+.login {
+    color: white;
+    background-color: palevioletred;
+    border: none;
+    font-size: 24px;
+    font-weight: 800;
+}
+.signup {
+    border: solid 2px palevioletred;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .logo {
+        font-size: 35px;
+    }
+    .nav-links-container {
+        gap: 15px;
+    }
+    .nav-link {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+    .nav-links-container{
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        font-size: 30px;
+        text-align: center;
+    }
+    .nav-links-container{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-link {
+        padding: 7px 12px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .logo {
+        font-size: 18px;
+    }
+}
